@@ -6,15 +6,14 @@ set :default_environment, {
 }
 
 
-set :application, "de-formularios"
-set :repository, "git@github.com:cran-io/de-formularios.git"
+set :application, "rails-starter-app"
+set :repository, "git@github.com:Maikol/rails_start.git"
 set :user, "ubuntu"
 set :use_sudo, false
 set :ssh_options, { :forward_agent => true }
-set :deploy_to, "/home/ubuntu/"
 set :branch, "chef_repo"
 
-server "ec2-54-207-67-191.sa-east-1.compute.amazonaws.com", :web, :app, :db, :primary => true
+server "ec2-54-207-68-229.sa-east-1.compute.amazonaws.com", :web, :app, :db, :primary => true
 ssh_options[:keys] = ["/Users/migueldeelias/Downloads/de-forms.pem"]
 
 after "deploy:finalize_update", "symlink:all"
