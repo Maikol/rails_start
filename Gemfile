@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.0'
 gem 'rails', '4.0.0'
 
 # Servers
 gem 'puma'
 gem 'unicorn'
+gem 'capistrano', '~> 2.15'
 
 gem 'omniauth'
 gem 'omniauth-twitter'
@@ -46,11 +47,10 @@ gem 'less-rails'
 gem 'sass-rails', '~> 4.0.0'
 gem 'therubyracer'
 gem 'turbolinks'
-gem 'twitter-bootstrap-rails', github: 'diowa/twitter-bootstrap-rails', branch: 'fontawesome-3.2.1'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
-  gem 'debugger'
   gem 'delorean'
   gem 'factory_girl_rails'
   gem 'faker'
