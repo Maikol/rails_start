@@ -57,4 +57,4 @@ production:
   database: starterapp_production
   pool: 5
   username: postgres
-  password:
+  password: postgresqlrandompassword
