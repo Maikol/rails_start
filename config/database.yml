@@ -54,7 +54,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: starterapp_production
+  database: deforms
   pool: 5
   username: postgres
   password: postgresqlrandompassword
